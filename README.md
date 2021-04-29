@@ -1,6 +1,12 @@
 # GMNN
 This is an implementation of the [GMNN (Graph Markov Neural Networks)](https://arxiv.org/abs/1905.06214) model.
 
+
+# how to run the code
+
+ohup python3 run_dataformat.py >temp/e0.out 2>temp/e0.err &
+
+
 Table of Contents
 =================
 <!--ts-->
