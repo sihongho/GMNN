@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-09 21:57:45
-LastEditTime: 2021-04-11 23:34:53
+LastEditTime: 2021-04-28 20:48:58
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: /GMNN/semisupervised/codes/run_cora.py
@@ -15,7 +15,7 @@ import datetime
 opt = dict()
 
 opt['dataset'] = '../data/cora'
-opt['dataset'] = '../data/data_format'
+# opt['dataset'] = '../data/data_format'
 opt['hidden_dim'] = 16
 opt['input_dropout'] = 0.5
 opt['dropout'] = 0
