@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "run_dataformat3.py", line 55, in <module>
+    t = end - start
+AttributeError: 'datetime.timedelta' object has no attribute 'strftime'

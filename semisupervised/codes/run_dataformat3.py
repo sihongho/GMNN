@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-09 21:57:45
-LastEditTime: 2021-04-28 21:39:19
+LastEditTime: 2021-04-28 21:52:55
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 '''
@@ -44,12 +44,13 @@ start_time = start.strftime("%H:%M:%S")
 print("Start Time =", start_time)
 
 for k in range(100):
-    seed = k + 1
+    seed = k + 100
+    # e3_2 + 100
     opt['seed'] = seed
     run(opt)
 
 end = datetime.now()
 end_time = end.strftime("%H:%M:%S")
 print("End Time =", end_time)
-t = end - start
-print("Comsuming Time =", t.strftime("%H:%M:%S"))
+# t = end - start
+# print("Comsuming Time =", t.strftime("%H:%M:%S"))

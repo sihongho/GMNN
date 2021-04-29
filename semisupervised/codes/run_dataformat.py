@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-09 21:57:45
-LastEditTime: 2021-04-28 21:38:56
+LastEditTime: 2021-04-28 21:53:06
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 '''
@@ -51,5 +51,5 @@ for k in range(100):
 end = datetime.now()
 end_time = end.strftime("%H:%M:%S")
 print("End Time =", end_time)
-t = end - start
-print("Comsuming Time =", t.strftime("%H:%M:%S"))
+# t = end - start
+# print("Comsuming Time =", t.strftime("%H:%M:%S"))
