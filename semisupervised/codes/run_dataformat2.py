@@ -38,7 +38,18 @@ def run(opt):
     opt_ = copy.deepcopy(opt)
     os.system(generate_command(opt_))
 
+from datetime import datetime
+start = datetime.now()
+start_time = start.strftime("%H:%M:%S")
+print("Start Time =", start_time)
+
 for k in range(100):
     seed = k + 1
     opt['seed'] = seed
     run(opt)
+
+end = datetime.now()
+end_time = end.strftime("%H:%M:%S")
+print("End Time =", end_time)
+t = end - start
+print("Comsuming Time =", t.strftime("%H:%M:%S"))
