@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-04-09 21:57:45
-LastEditTime: 2021-04-28 20:56:51
+LastEditTime: 2021-04-28 21:36:47
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 '''
@@ -38,7 +38,18 @@ def run(opt):
     opt_ = copy.deepcopy(opt)
     os.system(generate_command(opt_))
 
+from datetime import datetime
+start = datetime.now()
+start_time = start.strftime("%H:%M:%S")
+print("Start Time =", start_time)
+
 for k in range(100):
     seed = k + 1
     opt['seed'] = seed
     run(opt)
+
+end = datetime.now()
+end_time = end.strftime("%H:%M:%S")
+print("End Time =", end_time)
+t = end - start
+print("Comsuming Time =", t.strftime("%H:%M:%S"))
